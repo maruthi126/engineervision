@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress Busters</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            /* Added background image */
+            background: url('https://ellasmilesblog.wordpress.com/wp-content/uploads/2015/05/blue-puzzle-piece-free-hd.jpg') no-repeat center center/cover;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            width: 90%;
+        }
+
+        /* Game List */
+        .games-list {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .game-box {
+            flex: 1;
+            max-width: 30%;
+            background-color: #ffffffcc;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.4s ease;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .game-box:hover {
+            background-color: #ffffff;
+            transform: scale(1.08);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        .game-box img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px; /* push button down */
+        }
+
+        .game-box a {
+            display: block;
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 15px 30px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #29b6f6, #0277bd);
+            color: white;
+            transition: background 0.3s, transform 0.3s;
+            margin-top: 10px; /* space between icon & button */
+        }
+
+        .game-box a:hover {
+            background: linear-gradient(135deg, #42a5f5, #01579b);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="games-list">
+        <div class="game-box">
+            <!-- Maruthi: Add 2048 Game Icon here -->
+            <img src="https://armine-yepremyan.gallerycdn.vsassets.io/extensions/armine-yepremyan/2048/1.0.4/1701455691150/Microsoft.VisualStudio.Services.Icons.Default" alt="2048 Logo">
+            <a href="https://2048app10.tiiny.site/" target="_blank">Play 2048</a>
+        </div>
+
+        <div class="game-box">
+            <!-- Maruthi: Add Candy Crush Icon here -->
+            <img src="https://play-lh.googleusercontent.com/TLUeelx8wcpEzf3hoqeLxPs3ai1tdGtAZTIFkNqy3gbDp1NPpNFTOzSFJDvZ9narFS0=s96-rw" alt="Candy Crush Logo">
+            <a href="https://www.candycrushsaga.com" target="_blank">Play Candy Crush</a>
+        </div>
+
+        <div class="game-box">
+            <!-- Maruthi: Add Word Puzzle Icon here -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdBNBl2zADukonTniUd-I13yZqpvzXDkONew&s" alt="Word Puzzle Logo">
+            <a href="https://www.wordsearchpuzzle.net/" target="_blank">Play Word Puzzle</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
